@@ -1,8 +1,19 @@
 <script>
     import imageCover from "$lib/assets/images/cover-image.jpg";
+
+    $: innerHeight = 0;
+    $: innerWidth = 0;
+    let cover = "";
+
+    function setCover() {
+        if (innerHeight / innerWidth > 1) cover = "cover vertical";
+        else cover = "cover horizontal";
+    }
 </script>
 
-<div class="cover">
+<svelte:window bind:innerHeight bind:innerWidth on:load={setCover} on:resize={setCover} />
+
+<div class={cover}>
     <img src={imageCover} alt="Samuel Pita" />
     <div class="info">
         <h1>Samuel Pita</h1>
