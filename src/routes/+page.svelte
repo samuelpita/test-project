@@ -12,5 +12,36 @@
 </div>
 
 <style>
+    div.cover {
+        height: 100vh;
+        width: 100vw;
 
+        display: grid;
+        /*  */
+    }
+    div.cover.horizontal {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    div.cover.vertical {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    div.cover img {
+        object-fit: cover;
+    }
+    div.cover.horizontal > img {
+        min-height: 100vh;
+        max-height: 100vh;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+    div.cover.vertical > img {
+        grid-row: 1 / -1;
+        min-height: 100vh;
+        max-height: 100vh;
+        min-width: 100vw;
+        max-width: 100vw;
+    }
 </style>
