@@ -23,6 +23,7 @@
 </div>
 
 <style>
+    /* div style classes */
     div.cover {
         height: 100vh;
         width: 100vw;
@@ -38,7 +39,15 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    div.info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
+    /* Element style classes in div.cover */
     div.cover img {
         object-fit: cover;
     }
@@ -54,5 +63,20 @@
         max-height: 100vh;
         min-width: 100vw;
         max-width: 100vw;
+    }
+
+    /* Element style classes in div.info */
+    div.info h1 {
+        --space: 36px;
+        margin-bottom: calc(var(--space) / 2);
+        padding: 0 var(--space);
+        padding-bottom: calc(var(--space) / 2);
+
+        border-bottom: 1px solid;
+        font-family: "Major Mono Display", sans-serif;
+        font-size: 2.4em;
+    }
+    div.info p {
+        margin-bottom: 4px;
     }
 </style>
