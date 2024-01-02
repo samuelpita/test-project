@@ -1,0 +1,23 @@
+/* Global default stylesheet for sammuu.dev */
+
+:root {
+    --colorAccent: hsl(256deg, 76%, 48%);
+    --colorBackground: #111;
+    --colorNeutral1: #2F2F2F;
+    --colorNeutral2: #444;
+    --colorNeutral3: #888;
+    --color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    border: 0 none var(--color);
+    color: var(--color);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    background-color: var(--colorBackground);
+}
