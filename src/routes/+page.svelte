@@ -53,7 +53,7 @@
     }
     div.cover.vertical {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
     }
     div.info {
         display: flex;
@@ -74,7 +74,9 @@
         max-width: 50vw;
     }
     div.cover.vertical > img {
+        grid-column: 1;
         grid-row: 1 / -1;
+
         min-height: 100vh;
         max-height: 100vh;
         min-width: 100vw;
@@ -86,9 +88,11 @@
         --gradient3: rgba(17, 17, 17, 0.5) 80%;
         --gradient4: rgba(17, 17, 17, 0) 100%;
 
-        grid-row: -1;
+        grid-column: 1;
+        grid-row: 2;
         padding-top: 12vh;
         padding-bottom: 6vh;
+
         background: linear-gradient(0deg, var(--gradient1), var(--gradient2), var(--gradient3), var(--gradient4));
     }
 
