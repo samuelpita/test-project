@@ -1,4 +1,5 @@
 <script>
+    import { onMount } from "svelte";
     import imageCover from "$lib/assets/images/cover-image.jpg";
 
     $: innerHeight = 0;
@@ -9,9 +10,11 @@
         if (innerHeight / innerWidth > 1) cover = "cover vertical";
         else cover = "cover horizontal";
     }
+
+    onMount(setCover);
 </script>
 
-<svelte:window bind:innerHeight bind:innerWidth on:load={setCover} on:resize={setCover} />
+<svelte:window bind:innerHeight bind:innerWidth on:resize={setCover} />
 
 <div class={cover}>
     <img src={imageCover} alt="Samuel Pita" />
@@ -22,7 +25,17 @@
     </div>
 </div>
 
+<div class="info page">
+    <p>Currently work in progress... Come back next time!</p>
+</div>
+
 <style>
+    /* Independent style classes */
+    .page {
+        height: 100vh;
+        width: 100vw;
+    }
+
     /* div style classes */
     div.cover {
         --gradient1: hsl(256deg, 76%, 16%) 0%;
