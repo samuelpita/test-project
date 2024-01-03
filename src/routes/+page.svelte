@@ -25,11 +25,14 @@
 <style>
     /* div style classes */
     div.cover {
+        --gradient1: hsl(256deg, 76%, 16%) 0%;
+        --gradient2: hsl(320deg, 48%, 16%) 100%;
+
         height: 100vh;
         width: 100vw;
 
         display: grid;
-        /*  */
+        background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
     }
     div.cover.horizontal {
         grid-template-columns: 1fr 1fr;
@@ -63,6 +66,17 @@
         max-height: 100vh;
         min-width: 100vw;
         max-width: 100vw;
+    }
+    div.cover.vertical > div.info {
+        --gradient1: rgba(17, 17, 17, 1) 0%;
+        --gradient2: rgba(17, 17, 17, 0.75) 60%;
+        --gradient3: rgba(17, 17, 17, 0.5) 80%;
+        --gradient4: rgba(17, 17, 17, 0) 100%;
+
+        grid-row: -1;
+        padding-top: 12vh;
+        padding-bottom: 6vh;
+        background: linear-gradient(0deg, var(--gradient1), var(--gradient2), var(--gradient3), var(--gradient4));
     }
 
     /* Element style classes in div.info */
