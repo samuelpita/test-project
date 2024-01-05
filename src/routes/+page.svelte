@@ -29,4 +29,37 @@
 
 <style lang="sass">
     @use "../lib/styles/global"
+
+    div.content
+        display: flex
+        flex-direction: column
+
+    div.cover
+        display: grid
+
+        & img
+            min-height: 100vh
+            max-height: 100vh
+            object-fit: cover
+        
+        & div.content
+            align-items: center
+            justify-content: center
+            text-align: center
+
+        &.horizontal
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr
+
+            & > img
+                min-width: 100%
+                max-width: 100%
+
+        &.vertical
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr 1fr
+
+            & > img
+                min-width: 100vw
+                max-width: 100vw
 </style>
