@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import { onMount } from "svelte";
+    import { determineAspectRatioType } from "$lib";
+
+    $: innerWidth = 0;
+    $: innerHeight = 0;
+    let aspectRatioType = "";
+
+    const updateAspectRatioType = () => {
+        aspectRatioType = determineAspectRatioType(innerWidth, innerHeight);
+    };
+
+    onMount(() => {
+        updateAspectRatioType();
+    });
+</script>
+
+<svelte:window bind:innerWidth bind:innerHeight on:resize={updateAspectRatioType} />
