@@ -2,7 +2,9 @@
     import { onMount } from "svelte";
     import { determineAspectRatioType } from "$lib";
 
-    import titleCoverImage from "$lib/assets/images/title-cover-image.jpg";
+    import testImage from "$lib/assets/images/test-image.jpg";
+    import titleCoverImage from "$lib/assets/images/title-cover-image.jpeg";
+    import portfolioCoverImage from "$lib/assets/images/portfolio-cover-image.jpeg";
 
     $: innerWidth = 0;
     $: innerHeight = 0;
@@ -28,7 +30,7 @@
 </div>
 
 <div class="cover {aspectRatioType} flipped">
-    <img src={titleCoverImage} alt="Collage of pictures" />
+    <img src={portfolioCoverImage} alt="River near Nairn Falls, British Columbia" />
     <div class="content">
         <h1>My Capstone Portfolio</h1>
         <p>Check it out!</p>
