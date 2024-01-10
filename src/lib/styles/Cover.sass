@@ -1,0 +1,54 @@
+@use "sass:color"
+@use "sass:math"
+
+@use "./global"
+
+// Mixins
+
+@mixin gradientBackgroundFade($angle)
+    $color: global.$colorBackground
+    $arg1: $color 0%
+    $arg2: color.change($color, $alpha: 0.6) 60%
+    $arg3: color.change($color, $alpha: 0.4) 80%
+    $arg4: color.change($color, $alpha: 0) 100%
+    background: linear-gradient($angle, $arg1, $arg2, $arg3, $arg4)
+
+// Classes
+
+div.cover
+    @include global.sizeFullView
+    display: grid
+
+    & img
+        @include global.sizeMinMaxParent
+        object-fit: cover
+    
+    & .content
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+    
+    &.horizontal
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr
+
+        &.flipped
+            & > img
+                grid-column: 2
+                grid-row: 1
+            & > .content
+                grid-column: 1
+                grid-row: 1
+    
+    &.vertical
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3, 1fr)
+
+        & > img
+            grid-column: 1
+            grid-row: 1 / -1
+        & > .content
+            grid-column: 1
+            grid-row: 3

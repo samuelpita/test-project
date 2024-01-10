@@ -1,0 +1,33 @@
+@use "sass:color"
+@use "sass:list"
+@use "sass:map"
+@use "sass:math"
+
+$colorAccent: hsl(256deg, 76%, 48%)
+$colorBackground: #111
+$color: #fff
+
+*
+    margin: 0
+    padding: 0
+
+    border: 0 none $color
+    color: $color
+    font-family: "Space Grotesk", sans-serif
+
+// Functions
+
+@function colorNeutral($lightness)
+    @return color.adjust($colorBackground, $lightness: $lightness)
+
+// Mixins
+
+@mixin sizeMinMaxParent
+    min-width: 100%
+    max-width: 100%
+    min-height: 100%
+    max-height: 100%
+
+@mixin sizeFullView
+    width: 100vw
+    height: 100vh
