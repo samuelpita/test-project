@@ -26,6 +26,7 @@
     <div class="content">
         <h1>Samuel Pita</h1>
         <p>Programmer & Graphics Designer</p>
+        <p>Grade 12 Student in Whistler Secondary</p>
     </div>
 </div>
 
