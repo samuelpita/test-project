@@ -16,7 +16,6 @@
 		"autoprefixer": "^10.4.17",
 		"postcss": "^8.4.33",
 		"rollup-plugin-svelte": "^7.1.6",
-		"sass": "^1.69.6",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
 		"svelte-intersection-observer": "^1.0.0",
