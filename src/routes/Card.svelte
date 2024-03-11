@@ -1,5 +1,5 @@
 <script>
-    export const flipped = false;
+    export let flipped = false;
 
     export let styleCard = "";
     export let styleContent = "flex flex-col align-center justify-center p-8";

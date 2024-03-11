@@ -1,5 +1,5 @@
 <script>
-    export const flipped = false;
+    export let flipped = false;
 
     export let image = "";
     export let imageAlt = "";

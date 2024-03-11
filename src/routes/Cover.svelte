@@ -1,5 +1,6 @@
 <script>
-    export const flipped = false;
+    export let flipped = false;
+
     export let styleContentColor =
         "bg-gradient-to-t from-black to-transparent md:bg-gradient-to-tl md:from-primary-800 md:to-secondary-700";
     export let styleContentLayout = "flex flex-col align-center justify-center px-8 py-16";
