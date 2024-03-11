@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Card from "./Card.svelte";
+    import CardImage from "./Card_Image.svelte";
+    import Cover from "./Cover.svelte";
+    import Section from "./Section.svelte";
+</script>

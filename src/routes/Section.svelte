@@ -10,9 +10,11 @@
 
 <section class="flex {styleSectionLayout} {styleSectionColor}">
     <header class="flex {styleHeader}">
-        <div class={styleIconDiv}>
-            <img src={icon} alt={iconAlt} class="size-full object-cover" />
-        </div>
+        {#if icon != ""}
+            <div class={styleIconDiv}>
+                <img src={icon} alt={iconAlt} class="size-full object-cover" />
+            </div>
+        {/if}
         <slot name="header" />
     </header>
     <slot name="content" />
