@@ -15,6 +15,13 @@
      * @param {CustomEvent<IntersectionObserverEntry>} e
      */
     export let onObserve = (e) => {
+        console.log(self.className);
+    };
+
+    /**
+     * @param {CustomEvent<IntersectionObserverEntry>} e
+     */
+    const defaultOnObserve = (e) => {
         self.className =
             style + " " + (e.detail.isIntersecting ? styleObserving : styleNotObserving);
     };
@@ -23,7 +30,10 @@
 <div bind:this={self}>
     <IntersectionObserver
         element={self}
-        on:observe={onObserve}
+        on:observe={(e) => {
+            defaultOnObserve(e);
+            onObserve(e);
+        }}
         {once}
         {threshold}
         let:entry

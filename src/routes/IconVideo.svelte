@@ -27,4 +27,6 @@
             <source src={src.webm} type="video/webm" />
         {/if}
     </video>
+
+    <slot />
 </Visibility>
