@@ -9,43 +9,39 @@
     export let styleContentColorFV = "bg-gradient-to-t from-black to-transparent";
     export let styleContentLayoutFV = "flex flex-col align-center justify-center px-8 py-16";
 
+    export let styleCover = "";
     export let styleGraphic = "";
 </script>
 
-<div class="size-full relative md:grid md:grid-cols-2 md:grid-rows-1">
-    {#if forceVertical}
+{#if forceVertical}
+    <div class="size-full relative {styleCover}">
+        <div class="z-10 w-full absolute bottom-0 {styleContentLayoutFV} {styleContentColorFV}">
+            <slot name="content" />
+        </div>
+        <div class="z-0 size-full relative {styleGraphic}">
+            <slot name="graphic" />
+        </div>
+    </div>
+{:else}
+    <div class="size-full relative md:grid md:grid-cols-2 md:grid-rows-1 {styleCover}">
         {#if flipped}
             <div class="size-full relative {styleGraphic}">
                 <slot name="graphic" />
             </div>
-            <div class="w-full absolute bottom-0 {styleContentLayoutFV} {styleContentColorFV}">
+            <div
+                class="w-full absolute bottom-0 md:size-full md:relative {styleContentLayout} {styleContentColor}"
+            >
                 <slot name="content" />
             </div>
         {:else}
-            <div class="z-10 w-full absolute bottom-0 {styleContentLayoutFV} {styleContentColorFV}">
+            <div
+                class="z-10 w-full absolute bottom-0 md:size-full md:relative {styleContentLayout} {styleContentColor}"
+            >
                 <slot name="content" />
             </div>
             <div class="z-0 size-full relative {styleGraphic}">
                 <slot name="graphic" />
             </div>
         {/if}
-    {:else if flipped}
-        <div class="size-full relative {styleGraphic}">
-            <slot name="graphic" />
-        </div>
-        <div
-            class="w-full absolute bottom-0 md:size-full md:relative {styleContentLayout} {styleContentColor}"
-        >
-            <slot name="content" />
-        </div>
-    {:else}
-        <div
-            class="z-10 w-full absolute bottom-0 md:size-full md:relative {styleContentLayout} {styleContentColor}"
-        >
-            <slot name="content" />
-        </div>
-        <div class="z-0 size-full relative {styleGraphic}">
-            <slot name="graphic" />
-        </div>
-    {/if}
-</div>
+    </div>
+{/if}
