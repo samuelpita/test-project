@@ -18,6 +18,9 @@
     onObserve={(e) => {
         if (e.detail.isIntersecting) self.currentTime = 0;
     }}
+    let:entry
+    let:intersecting
+    let:observer
 >
     <video bind:this={self} autoplay muted {poster}>
         {#if "mov" in src}
@@ -28,5 +31,5 @@
         {/if}
     </video>
 
-    <slot />
+    <slot {entry} {intersecting} {observer} />
 </Visibility>
