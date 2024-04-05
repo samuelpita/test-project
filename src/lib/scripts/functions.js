@@ -29,3 +29,33 @@ export function determineAspectRatioTypeExt(width, height, ratios) {
 
     return key_ratios[key_ratios.length - 1];
 }
+
+/**
+ *
+ * @param {number} width
+ */
+export function determineInnerWidthType(width) {
+    if (width >= 1536) return "2xl";
+    else if (width >= 1280) return "xl";
+    else if (width >= 1024) return "lg";
+    else if (width >= 768) return "md";
+    else return "sm";
+}
+
+/**
+ *
+ * @param {number} width
+ * @param {Object<string, number>} types
+ */
+export function determineInnerWidthTypeExt(width, types) {
+    let key_types = Object.keys(types).sort((a, b) => types[b] - types[a]);
+
+    for (let i = 0; i < key_types.length; i++) {
+        let key = key_types[i];
+        let type = types[key];
+
+        if (width >= type) return key;
+    }
+
+    return key_types[key_types.length - 1];
+}
