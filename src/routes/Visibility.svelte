@@ -40,6 +40,6 @@
         let:intersecting
         let:observer
     >
-        <slot {entry} {intersecting} {observer} />
+        <slot {entry} {intersecting} {observer} {self} />
     </IntersectionObserver>
 </div>

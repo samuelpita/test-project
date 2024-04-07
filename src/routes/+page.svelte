@@ -4,8 +4,8 @@
     import Card from "./Card.svelte";
     import CardImage from "./Card_Image.svelte";
     import Cover from "./Cover.svelte";
-    import IconVideo from "./IconVideo.svelte";
     import Section from "./Section.svelte";
+    import Video from "./Video.svelte";
     import Visibility from "./Visibility.svelte";
 
     $: innerWidth = 0;

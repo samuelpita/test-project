@@ -8,16 +8,26 @@
     export let poster = "";
     export let src = { mov: "", webm: "" };
     export let style = "";
+    export let styleObserving = "";
+    export let styleNotObserving = "";
     export let threshold = 0;
+
+    /**
+     *
+     * @param {CustomEvent<IntersectionObserverEntry>} e
+     */
+    export let onObserve = (e) => {
+        if (e.detail.isIntersecting) self.currentTime = 0;
+    };
 </script>
 
 <Visibility
     {once}
     {style}
+    {styleObserving}
+    {styleNotObserving}
     {threshold}
-    onObserve={(e) => {
-        if (e.detail.isIntersecting) self.currentTime = 0;
-    }}
+    {onObserve}
     let:entry
     let:intersecting
     let:observer
@@ -31,5 +41,5 @@
         {/if}
     </video>
 
-    <slot {entry} {intersecting} {observer} />
+    <slot {entry} {intersecting} {observer} {self} />
 </Visibility>
