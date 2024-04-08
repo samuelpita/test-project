@@ -10,7 +10,7 @@
     export let styleContentLayoutFV = "flex flex-col align-center justify-center px-8 py-16";
 
     export let styleCover = "";
-    export let styleGraphic = "";
+    export let styleGraphic = "border-x-8 border-t-8 md:border-b-8 border-white";
 </script>
 
 {#if forceVertical}
