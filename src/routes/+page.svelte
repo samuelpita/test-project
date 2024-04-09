@@ -87,9 +87,10 @@
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
 >
-    <div class="w-full h-[50svh]">
+    <div class="w-full">
         <Cover
             styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-bl md:from-purple-800 md:to-sky-700"
+            styleContentLayout="flex flex-col align-center justify-center p-8"
         >
             <svelte:fragment slot="content">
                 <h2 class="font-sans text-center">
@@ -97,7 +98,10 @@
                 </h2>
                 <p class="font-sans text-center text-xl">Includes neatly written source code.</p>
             </svelte:fragment>
-            <img src="./home-portfolio.jpeg" alt="" class="size-full object-cover" slot="graphic" />
+            <div slot="graphic" class="size-full grid grid-cols-2 bg-white gap-2">
+                <img src="./code/python-logo.png" alt="" class="size-full object-contain" />
+                <img src="./code/js-logo.png" alt="" class="size-full object-contain" />
+            </div>
         </Cover>
     </div>
 </Visibility>
@@ -108,9 +112,9 @@
     style="transition duration-300 pb-6 md:pb-0"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
-    threshold={0.25}
+    threshold={0.15}
 >
-    <div class="w-full h-[75svh]">
+    <div class="w-full">
         <Cover
             flipped={true}
             styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-l md:from-fuchsia-800 md:to-rose-700"
@@ -122,10 +126,13 @@
                 <p class="font-sans text-center text-xl">Digital arts & illustrations I made</p>
             </svelte:fragment>
             <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
-                <img src="./home-title-0.jpeg" alt="" class="size-full object-cover" />
-                <img src="./home-title-1.jpeg" alt="" class="size-full object-cover" />
-                <img src="./home-title-2.jpeg" alt="" class="size-full object-cover" />
-                <img src="./home-title-3.jpeg" alt="" class="size-full object-cover" />
+                <img src="./art/ma-night-tempo.png" alt="" class="size-full object-cover" />
+                <img
+                    src="./art/student-planner-2023-2024.png"
+                    alt=""
+                    class="size-full object-contain row-span-2"
+                />
+                <img src="./art/tanay.png" alt="" class="size-full object-cover" />
             </div>
         </Cover>
     </div>
