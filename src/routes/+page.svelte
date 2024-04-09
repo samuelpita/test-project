@@ -4,8 +4,8 @@
     import Card from "./Card.svelte";
     import CardImage from "./Card_Image.svelte";
     import Cover from "./Cover.svelte";
+    import IconVideo from "./IconVideo.svelte";
     import Section from "./Section.svelte";
-    import Video from "./Video.svelte";
     import Visibility from "./Visibility.svelte";
 
     $: innerWidth = 0;
@@ -17,7 +17,7 @@
 <div class="w-full h-svh">
     <Cover>
         <svelte:fragment slot="content">
-            <Video
+            <IconVideo
                 poster="./home-title-anim.png"
                 src={{ mov: "./home-title-anim.mov", webm: "./home-title-anim.webm" }}
                 style="max-w-[32rem] min-w-0 mx-auto transition duration-300"
@@ -26,7 +26,7 @@
                 threshold={1}
             >
                 <p class="font-sans text-center text-xl">Programmer & Graphics Designer</p>
-            </Video>
+            </IconVideo>
         </svelte:fragment>
         <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
             <img src="./home-title-0.jpeg" alt="" class="size-full object-cover" />
