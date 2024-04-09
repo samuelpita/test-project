@@ -27,7 +27,7 @@
     };
 </script>
 
-<div bind:this={self}>
+<div bind:this={self} class={style}>
     <IntersectionObserver
         element={self}
         on:observe={(e) => {

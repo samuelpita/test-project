@@ -57,13 +57,17 @@
 
 <!-- Capstone Project -->
 <Visibility
-    style="transition duration-300 pb-4 md:pb-0"
+    once={true}
+    style="transition duration-300 pb-6 md:pb-0"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
 >
-    <div class="w-full h-[60svh]">
-        <Cover flipped={true}>
+    <div class="w-full h-[50svh]">
+        <Cover
+            flipped={true}
+            styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-tr md:from-teal-800 md:to-emerald-700"
+        >
             <svelte:fragment slot="content">
                 <h2 class="font-sans text-center">
                     <a href="/portfolio">My Capstone Portfolio</a>
@@ -77,13 +81,16 @@
 
 <!-- Programming -->
 <Visibility
-    style="transition duration-300 pb-4 md:pb-0"
+    once={true}
+    style="transition duration-300 pb-6 md:pb-0"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
 >
-    <div class="w-full h-[60svh]">
-        <Cover>
+    <div class="w-full h-[50svh]">
+        <Cover
+            styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-bl md:from-purple-800 md:to-sky-700"
+        >
             <svelte:fragment slot="content">
                 <h2 class="font-sans text-center">
                     <a href="/code">Programming Projects</a>
@@ -97,13 +104,17 @@
 
 <!-- Arts -->
 <Visibility
-    style="transition duration-300 pb-4 md:pb-0"
+    once={true}
+    style="transition duration-300 pb-6 md:pb-0"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
 >
-    <div class="w-full h-[80svh]">
-        <Cover flipped={true}>
+    <div class="w-full h-[75svh]">
+        <Cover
+            flipped={true}
+            styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-l md:from-fuchsia-800 md:to-rose-700"
+        >
             <svelte:fragment slot="content">
                 <h2 class="font-sans text-center">
                     <a href="/art">C#t Design</a>
