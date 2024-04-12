@@ -17,7 +17,10 @@
      * @param {CustomEvent<IntersectionObserverEntry>} e
      */
     export let onObserve = (e) => {
-        if (e.detail.isIntersecting) self.currentTime = 0;
+        if (e.detail.isIntersecting) {
+            self.currentTime = 0;
+            self.play();
+        }
     };
 </script>
 

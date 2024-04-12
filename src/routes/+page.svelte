@@ -14,28 +14,27 @@
 <svelte:window bind:innerWidth />
 
 <!-- Intro -->
-<div class="w-full h-svh">
-    <Cover>
-        <svelte:fragment slot="content">
-            <IconVideo
-                poster="./home-title-anim.png"
-                src={{ mov: "./home-title-anim.mov", webm: "./home-title-anim.webm" }}
-                style="max-w-[32rem] min-w-0 mx-auto transition duration-300"
-                styleObserving="opacity-100 translate-y-0"
-                styleNotObserving="opacity-0 -translate-y-8"
-                threshold={1}
-            >
-                <p class="font-sans text-center text-xl">Programmer & Graphics Designer</p>
-            </IconVideo>
-        </svelte:fragment>
-        <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
-            <img src="./home-title-0.jpeg" alt="" class="size-full object-cover" />
-            <img src="./home-title-1.jpeg" alt="" class="size-full object-cover" />
-            <img src="./home-title-2.jpeg" alt="" class="size-full object-cover" />
-            <img src="./home-title-3.jpeg" alt="" class="size-full object-cover" />
-        </div>
-    </Cover>
-</div>
+<Cover overlayContent={true}>
+    <svelte:fragment slot="content">
+        <IconVideo
+            poster="./home-title-anim.png"
+            src={{ mov: "./home-title-anim.mov", webm: "./home-title-anim.webm" }}
+            style="max-w-[32rem] min-w-0 mx-auto transition duration-300"
+            styleObserving="opacity-100 translate-y-0"
+            styleNotObserving="opacity-0 -translate-y-8"
+            threshold={1}
+        >
+            <p class="font-sans text-center text-xl">Programmer & Graphics Designer</p>
+        </IconVideo>
+    </svelte:fragment>
+
+    <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
+        <img src="./home-title-0.jpeg" alt="" class="size-full object-cover" />
+        <img src="./home-title-1.jpeg" alt="" class="size-full object-cover" />
+        <img src="./home-title-2.jpeg" alt="" class="size-full object-cover" />
+        <img src="./home-title-3.jpeg" alt="" class="size-full object-cover" />
+    </div>
+</Cover>
 
 <!-- About Me -->
 <Visibility
@@ -58,82 +57,81 @@
 <!-- Capstone Project -->
 <Visibility
     once={true}
-    style="transition duration-300 pb-6 md:pb-0"
+    style="transition duration-300"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
 >
-    <div class="w-full h-[50svh]">
-        <Cover
-            flipped={true}
-            styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-tr md:from-teal-800 md:to-emerald-700"
-        >
-            <svelte:fragment slot="content">
-                <h2 class="font-sans text-center">
-                    <a href="/portfolio">My Capstone Portfolio</a>
-                </h2>
-                <p class="font-sans text-center text-xl">Check it out!</p>
-            </svelte:fragment>
-            <img src="./home-portfolio.jpeg" alt="" class="size-full object-cover" slot="graphic" />
-        </Cover>
-    </div>
+    <Cover
+        flipped={true}
+        styleContentColor="bg-gradient-to-tr from-teal-800 to-emerald-700"
+        styleCover="w-full h-[50svh]"
+    >
+        <svelte:fragment slot="content">
+            <h2 class="font-sans text-center">
+                <a href="/portfolio">My Capstone Portfolio</a>
+            </h2>
+            <p class="font-sans text-center text-xl">Check it out!</p>
+        </svelte:fragment>
+
+        <img src="./home-portfolio.jpeg" alt="" class="size-full object-cover" slot="graphic" />
+    </Cover>
 </Visibility>
 
 <!-- Programming -->
 <Visibility
     once={true}
-    style="transition duration-300 pb-6 md:pb-0"
+    style="transition duration-300"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
 >
-    <div class="w-full">
-        <Cover
-            styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-bl md:from-purple-800 md:to-sky-700"
-            styleContentLayout="flex flex-col align-center justify-center p-8"
-        >
-            <svelte:fragment slot="content">
-                <h2 class="font-sans text-center">
-                    <a href="/code">Programming Projects</a>
-                </h2>
-                <p class="font-sans text-center text-xl">Includes neatly written source code.</p>
-            </svelte:fragment>
-            <div slot="graphic" class="size-full grid grid-cols-2 bg-white gap-2">
-                <img src="./code/python-logo.png" alt="" class="size-full object-contain" />
-                <img src="./code/js-logo.png" alt="" class="size-full object-contain" />
-            </div>
-        </Cover>
-    </div>
+    <Cover
+        styleContentColor="bg-gradient-to-bl from-purple-800 to-sky-700"
+        styleCover="w-full h-[50svh]"
+    >
+        <svelte:fragment slot="content">
+            <h2 class="font-sans text-center">
+                <a href="/code">Programming Projects</a>
+            </h2>
+            <p class="font-sans text-center text-xl">Includes neatly written source code.</p>
+        </svelte:fragment>
+
+        <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
+            <img src="./code/python-logo.png" alt="" class="size-full object-contain" />
+            <img src="./code/js-logo.png" alt="" class="size-full object-contain" />
+        </div>
+    </Cover>
 </Visibility>
 
 <!-- Arts -->
 <Visibility
     once={true}
-    style="transition duration-300 pb-6 md:pb-0"
+    style="transition duration-300"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.15}
 >
-    <div class="w-full">
-        <Cover
-            flipped={true}
-            styleContentColor="bg-gradient-to-t from-black to-transparent md:bg-gradient-to-l md:from-fuchsia-800 md:to-rose-700"
-        >
-            <svelte:fragment slot="content">
-                <h2 class="font-sans text-center">
-                    <a href="/art">C#t Design</a>
-                </h2>
-                <p class="font-sans text-center text-xl">Digital arts & illustrations I made</p>
-            </svelte:fragment>
-            <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
-                <img src="./art/ma-night-tempo.png" alt="" class="size-full object-cover" />
-                <img
-                    src="./art/student-planner-2023-2024.png"
-                    alt=""
-                    class="size-full object-contain row-span-2"
-                />
-                <img src="./art/tanay.png" alt="" class="size-full object-cover" />
-            </div>
-        </Cover>
-    </div>
+    <Cover
+        flipped={true}
+        styleContentColor="bg-gradient-to-l from-fuchsia-800 to-rose-700"
+        styleCover="w-full h-[75svh]"
+    >
+        <svelte:fragment slot="content">
+            <h2 class="font-sans text-center">
+                <a href="/art">C#t Design</a>
+            </h2>
+            <p class="font-sans text-center text-xl">Digital arts & illustrations I made</p>
+        </svelte:fragment>
+
+        <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
+            <img src="./art/ma-night-tempo.png" alt="" class="size-full object-contain" />
+            <img
+                src="./art/student-planner-2023-2024.png"
+                alt=""
+                class="size-full object-contain row-span-2"
+            />
+            <img src="./art/tanay.png" alt="" class="size-full object-contain" />
+        </div>
+    </Cover>
 </Visibility>
