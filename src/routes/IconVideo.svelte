@@ -35,9 +35,9 @@
     let:intersecting
     let:observer
 >
-    <video bind:this={self} autoplay muted {poster}>
+    <video bind:this={self} autoplay muted playsinline {poster}>
         {#if "mov" in src}
-            <source src={src.mov} type="video/mp4" />
+            <source src={src.mov} type="video/mp4; codecs='hvc1'" />
         {/if}
         {#if "webm" in src}
             <source src={src.webm} type="video/webm" />

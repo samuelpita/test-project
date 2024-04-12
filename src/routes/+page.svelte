@@ -47,9 +47,14 @@
     <Section icon="./favicon.png">
         <h2 slot="header" class="font-sans">About Me</h2>
         <p slot="content" class="font-sans">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi ut libero,
-            labore molestias doloribus neque provident nisi aliquid. Tempore minima numquam nam
-            dicta possimus corrupti doloremque. Cumque, pariatur tenetur.
+            My name is Samuel Pita, and I am a Filipino local in Whistler, and have been for almost
+            a decade at this point. I like computers and technology; I like programming, and I’m
+            certain that will be what I will be passionate about for a while. I also like doing
+            media and web design, and I’m a strong advocate for better urbanism. I was born in the
+            Philippines in 2006, and I’ve moved several times before my family and I settled in
+            Whistler in the summer of 2014. I’m currently in Whistler Secondary as a Grade 12
+            student, and I hope to be in Vancouver, studying Computer Science in BCIT or Douglas
+            College next year!
         </p>
     </Section>
 </Visibility>
