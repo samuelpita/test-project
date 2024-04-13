@@ -4,21 +4,24 @@
 
 @layer base {
     div {
-        @apply min-w-0 min-h-0;
+        @apply min-w-0 min-h-0 overflow-hidden;
     }
     a {
         @apply underline underline-offset-4 hover:text-tertiary-400;
     }
     h1 {
-        @apply font-bold text-4xl md:text-5xl;
+        @apply font-bold text-3xl xl:text-4xl 2xl:text-5xl;
     }
     h2 {
-        @apply font-bold text-3xl md:text-4xl;
+        @apply font-bold text-2xl xl:text-3xl 2xl:text-4xl;
     }
     h3 {
-        @apply font-bold text-2xl;
+        @apply font-bold text-lg lg:text-xl 2xl:text-2xl;
+    }
+    h4 {
+        @apply text-lg lg:text-xl 2xl:text-2xl;
     }
     p {
-        @apply md:text-lg;
+        @apply lg:text-lg;
     }
 }
