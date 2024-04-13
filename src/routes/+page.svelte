@@ -14,17 +14,17 @@
 <svelte:window bind:innerWidth />
 
 <!-- Intro -->
-<Cover overlayContent={true}>
+<Cover overlayContent={true} styleCoverShape="" styleItemShape="">
     <svelte:fragment slot="content">
         <IconVideo
             poster="./home-title-anim.png"
             src={{ mov: "./home-title-anim.mov", webm: "./home-title-anim.webm" }}
-            style="max-w-[32rem] min-w-0 mx-auto transition duration-300"
+            style="max-w-[40rem] min-w-0 mx-auto transition duration-300"
             styleObserving="opacity-100 translate-y-0"
             styleNotObserving="opacity-0 -translate-y-8"
             threshold={1}
         >
-            <p class="font-sans text-center text-xl">Programmer & Graphics Designer</p>
+            <h4 class="font-sans text-center">Programmer & Graphics Designer</h4>
         </IconVideo>
     </svelte:fragment>
 
@@ -62,7 +62,7 @@
 <!-- Capstone Project -->
 <Visibility
     once={true}
-    style="transition duration-300"
+    style="transition duration-300 md:mb-4"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
@@ -70,13 +70,13 @@
     <Cover
         flipped={true}
         styleContentColor="bg-gradient-to-tr from-teal-800 to-emerald-700"
-        styleCover="w-full h-[50svh]"
+        styleCover="max-w-[80rem] mx-auto h-[50svh]"
     >
         <svelte:fragment slot="content">
-            <h2 class="font-sans text-center">
+            <h2 class="font-sans text-center lg:mb-2">
                 <a href="/portfolio">My Capstone Portfolio</a>
             </h2>
-            <p class="font-sans text-center text-xl">Check it out!</p>
+            <h4 class="font-sans text-center">Check it out!</h4>
         </svelte:fragment>
 
         <img src="./home-portfolio.jpeg" alt="" class="size-full object-cover" slot="graphic" />
@@ -86,20 +86,20 @@
 <!-- Programming -->
 <Visibility
     once={true}
-    style="transition duration-300"
+    style="transition duration-300 md:mb-4"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
 >
     <Cover
         styleContentColor="bg-gradient-to-bl from-purple-800 to-sky-700"
-        styleCover="w-full h-[50svh]"
+        styleCover="max-w-[80rem] mx-auto h-[50svh]"
     >
         <svelte:fragment slot="content">
-            <h2 class="font-sans text-center">
+            <h2 class="font-sans text-center lg:mb-2">
                 <a href="/code">Programming Projects</a>
             </h2>
-            <p class="font-sans text-center text-xl">Includes neatly written source code.</p>
+            <h4 class="font-sans text-center">Includes neatly written source code.</h4>
         </svelte:fragment>
 
         <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
@@ -120,13 +120,13 @@
     <Cover
         flipped={true}
         styleContentColor="bg-gradient-to-l from-fuchsia-800 to-rose-700"
-        styleCover="w-full h-[75svh]"
+        styleCover="max-w-[80rem] mx-auto h-[75svh]"
     >
         <svelte:fragment slot="content">
-            <h2 class="font-sans text-center">
+            <h2 class="font-sans text-center lg:mb-2">
                 <a href="/art">C#t Design</a>
             </h2>
-            <p class="font-sans text-center text-xl">Digital arts & illustrations I made</p>
+            <h4 class="font-sans text-center">Digital arts & illustrations I made</h4>
         </svelte:fragment>
 
         <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">

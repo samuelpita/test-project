@@ -10,8 +10,12 @@
     export let styleContentLayout = "flex flex-col items-center justify-center px-8 py-16";
 
     export let styleCover = "w-full h-svh";
+    export let styleCoverShape = "md:gap-4 md:px-4";
+
     export let styleGraphic = "border-8 border-white";
     export let styleGraphicOverlay = "border-x-8 border-t-8 border-white";
+
+    export let styleItemShape = "md:rounded-2xl";
 
     $: innerWidth = 0;
 </script>
@@ -28,7 +32,7 @@
         </div>
     </div> -->
 
-    <div class="flex flex-col relative {styleCover}">
+    <div class="flex flex-col relative {styleCover} {styleCoverShape}">
         {#if overlayContent}
             <div class="size-full relative {styleGraphicOverlay}">
                 <slot name="graphic" />
@@ -37,10 +41,10 @@
                 <slot name="content" />
             </div>
         {:else}
-            <div class="size-full {styleGraphic}">
+            <div class="size-full {styleGraphic} {styleItemShape}">
                 <slot name="graphic" />
             </div>
-            <div class="w-full {styleContentLayout} {styleContentColor}">
+            <div class="w-full {styleContentLayout} {styleContentColor} {styleItemShape}">
                 <slot name="content" />
             </div>
         {/if}
@@ -68,19 +72,19 @@
         {/if}
     </div> -->
 
-    <div class="grid grid-cols-2 grid-rows-1 {styleCover}">
+    <div class="grid grid-cols-2 grid-rows-1 {styleCover} {styleCoverShape}">
         {#if flipped}
-            <div class="size-full {styleGraphic}">
+            <div class="size-full {styleGraphic} {styleItemShape}">
                 <slot name="graphic" />
             </div>
-            <div class="size-full {styleContentLayout} {styleContentColor}">
+            <div class="size-full {styleContentLayout} {styleContentColor} {styleItemShape}">
                 <slot name="content" />
             </div>
         {:else}
-            <div class="size-full {styleContentLayout} {styleContentColor}">
+            <div class="size-full {styleContentLayout} {styleContentColor} {styleItemShape}">
                 <slot name="content" />
             </div>
-            <div class="size-full {styleGraphic}">
+            <div class="size-full {styleGraphic} {styleItemShape}">
                 <slot name="graphic" />
             </div>
         {/if}
