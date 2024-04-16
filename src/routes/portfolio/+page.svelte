@@ -13,21 +13,20 @@
 
 <svelte:window bind:innerWidth />
 
-<Section icon="../favicon.png">
+<Section icon="./portfolio/icon-family.png">
     <h2 slot="header" class="font-sans">My Family</h2>
-    <svelte:fragment slot="content">
-        <!--  -->
-    </svelte:fragment>
 </Section>
 
-<Section icon="../favicon.png" styleHeader="flex-row-reverse">
+<!--  -->
+
+<Section icon="./favicon.png" styleHeader="flex-row-reverse" styleIconDiv="ml-4">
     <h2 slot="header" class="font-sans">Where I've been</h2>
     <svelte:fragment slot="content">
         <!--  -->
     </svelte:fragment>
 </Section>
 
-<Section icon="../favicon.png">
+<Section icon="./favicon.png">
     <h2 slot="header" class="font-sans">Where I'm going</h2>
     <svelte:fragment slot="content">
         <!--  -->

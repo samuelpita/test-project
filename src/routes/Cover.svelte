@@ -32,9 +32,9 @@
         </div>
     </div> -->
 
-    <div class="flex flex-col relative {styleCover} {styleCoverShape}">
+    <div class="flex flex-col {styleCover} {styleCoverShape}">
         {#if overlayContent}
-            <div class="size-full relative {styleGraphicOverlay}">
+            <div class="size-full {styleGraphicOverlay}">
                 <slot name="graphic" />
             </div>
             <div class="w-full absolute bottom-0 {styleContentLayout} {styleContentColorOverlay}">

@@ -44,7 +44,7 @@
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.5}
 >
-    <Section icon="./favicon.png">
+    <Section icon="./favicon.svg">
         <h2 slot="header" class="font-sans">About Me</h2>
         <p slot="content" class="font-sans">
             My name is Samuel Pita, and I am a Filipino local in Whistler, and have been for almost
