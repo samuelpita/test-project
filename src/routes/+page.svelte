@@ -19,7 +19,7 @@
     <svelte:fragment slot="content">
         <IconVideo
             poster="./home-title-anim.png"
-            src={{ mov: "./home-title-anim.mov", webm: "./home-title-anim.webm" }}
+            src={{ mov: "", webm: "./home-title-anim.webm" }}
             style="max-w-[40rem] min-w-0 mx-auto transition duration-300"
             styleObserving="opacity-100 translate-y-0"
             styleNotObserving="opacity-0 -translate-y-8"

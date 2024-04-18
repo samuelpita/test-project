@@ -36,10 +36,10 @@
     let:observer
 >
     <video bind:this={self} autoplay muted playsinline {poster}>
-        {#if "mov" in src}
+        {#if src.mov != ""}
             <source src={src.mov} type="video/mp4; codecs='hvc1'" />
         {/if}
-        {#if "webm" in src}
+        {#if src.webm != ""}
             <source src={src.webm} type="video/webm" />
         {/if}
     </video>
