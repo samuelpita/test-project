@@ -20,7 +20,7 @@
 <!--  -->
 
 <Section icon="./favicon.png" styleHeader="flex-row-reverse" styleIconDiv="ml-4">
-    <h2 slot="header" class="font-sans">Where I've been</h2>
+    <h2 slot="header" class="font-sans text-right">Where I've been</h2>
     <svelte:fragment slot="content">
         <!--  -->
     </svelte:fragment>
