@@ -5,6 +5,7 @@
     import CardImage from "./Card_Image.svelte";
     import Cover from "./Cover.svelte";
     import IconVideo from "./IconVideo.svelte";
+    import ImageTooltip from "./ImageTooltip.svelte";
     import Section from "./Section.svelte";
     import Visibility from "./Visibility.svelte";
 
@@ -79,7 +80,11 @@
             <h4 class="font-sans text-center">Check it out!</h4>
         </svelte:fragment>
 
-        <img src="./home-portfolio.jpeg" alt="" class="size-full object-cover" slot="graphic" />
+        <ImageTooltip
+            slot="graphic"
+            image="./home-portfolio.jpeg"
+            imageAlt="River near Nairn Falls, B.C."
+        />
     </Cover>
 </Visibility>
 
@@ -130,13 +135,22 @@
         </svelte:fragment>
 
         <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
-            <img src="./art/ma-night-tempo.png" alt="" class="size-full object-contain" />
-            <img
-                src="./art/student-planner-2023-2024.png"
-                alt=""
-                class="size-full object-contain row-span-2"
+            <ImageTooltip
+                image="./art/ma-night-tempo.png"
+                imageAlt="My Ma as a Japanese Pop Singer from the 80s"
+                styleImage="object-contain"
             />
-            <img src="./art/tanay.png" alt="" class="size-full object-contain" />
+            <ImageTooltip
+                image="./art/student-planner-2023-2024.png"
+                imageAlt="Student planner cover for WSS, year 2023-2024"
+                style="size-full row-span-2"
+                styleImage="object-contain"
+            />
+            <ImageTooltip
+                image="./art/tanay.png"
+                imageAlt="Tanay in Philippines trip"
+                styleImage="object-contain"
+            />
         </div>
     </Cover>
 </Visibility>
