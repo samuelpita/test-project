@@ -19,7 +19,7 @@
 
 <!--  -->
 
-<Section icon="./favicon.png" styleHeader="flex-row-reverse" styleIconDiv="ml-4">
+<Section icon="./favicon.png" headerFlipped={true}>
     <h2 slot="header" class="font-sans text-right">Where I've been</h2>
     <svelte:fragment slot="content">
         <!--  -->
