@@ -5,32 +5,31 @@
     export let iconAlt = "";
     export let iconSize = "size-24 lg:size-28 2xl:size-32";
 
+    export let id = "";
+
     export let headerFlipped = false;
+    export let headerSize = "max-w-[56rem] w-full";
+    export let headerSpacing = "pb-6 xl:pb-8";
 
     export let maxWidth = "max-w-[56rem]";
 
     export let styleColor = "";
     export let styleLayout = "flex-col";
     export let styleShape = "";
-    export let styleSpacing = "p-4 lg:p-6 2xl:p-8";
+    export let styleSpacing = "p-6 xl:p-8";
 </script>
 
-<div class="flex mx-auto w-full {maxWidth} {styleColor} {styleLayout} {styleShape} {styleSpacing}">
-    <!-- <header class="flex items-center mb-4 {styleHeader}">
-        {#if icon != ""}
-            <div class="size-32 {styleIconDiv}">
-                <img src={icon} alt={iconAlt} class="size-full {styleIcon}" />
-            </div>
-        {/if}
-        <slot name="header" />
-    </header> -->
-
+<div
+    class="flex mx-auto w-full {maxWidth} {styleColor} {styleLayout} {styleShape} {styleSpacing}"
+    {id}
+>
     <Header
         flipped={headerFlipped}
         {icon}
         {iconAlt}
         {iconSize}
-        stylePadding="pb-4 lg:pb-6 2xl:pb-8"
+        styleSize={headerSize}
+        styleSpacing={headerSpacing}
     >
         <slot name="header" />
     </Header>
