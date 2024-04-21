@@ -19,14 +19,14 @@
 
 <!--  -->
 
-<Section icon="./favicon.png" headerFlipped={true}>
+<Section icon="./portfolio/icon-past.png" headerFlipped={true}>
     <h2 slot="header" class="font-sans text-right">Where I've been</h2>
     <svelte:fragment slot="content">
         <!--  -->
     </svelte:fragment>
 </Section>
 
-<Section icon="./favicon.png">
+<Section icon="./portfolio/icon-future.png">
     <h2 slot="header" class="font-sans">Where I'm going</h2>
     <svelte:fragment slot="content">
         <!--  -->
