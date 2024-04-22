@@ -10,6 +10,7 @@
     export let headerFlipped = false;
     export let headerSize = "max-w-[56rem] w-full";
     export let headerSpacing = "pb-6 xl:pb-8";
+    export let headerStyle = "border-b-2 border-white mb-6 xl:mb-8";
 
     export let maxWidth = "max-w-[56rem]";
 
@@ -28,6 +29,7 @@
         {icon}
         {iconAlt}
         {iconSize}
+        style={headerStyle}
         styleSize={headerSize}
         styleSpacing={headerSpacing}
     >
