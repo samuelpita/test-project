@@ -6,6 +6,7 @@
     import Cover from "./Cover.svelte";
     import IconVideo from "./IconVideo.svelte";
     import ImageTooltip from "./ImageTooltip.svelte";
+    import Loading from "./Loading.svelte";
     import Section from "./Section.svelte";
     import Visibility from "./Visibility.svelte";
 
@@ -13,6 +14,9 @@
 </script>
 
 <svelte:window bind:innerWidth />
+
+<!-- Loading Screen -->
+<Loading />
 
 <!-- Intro -->
 <Cover overlayContent={true} styleCoverShape="" styleItemShape="">
