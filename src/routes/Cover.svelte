@@ -8,14 +8,15 @@
     export let styleContentColor = "bg-gradient-to-tl from-primary-800 to-secondary-700";
     export let styleContentColorOverlay = "bg-gradient-to-t from-black to-transparent";
     export let styleContentLayout = "flex flex-col items-center justify-center px-8 py-16";
+    export let styleContentShape = { l: "rounded-l-2xl", r: "rounded-r-2xl", v: "rounded-b-2xl" };
 
     export let styleCover = "w-full h-svh";
-    export let styleCoverShape = "md:gap-4 md:px-4";
+    export let styleCoverShape = "";
+    export let styleCoverSpacing = "";
 
     export let styleGraphic = "border-8 border-white";
     export let styleGraphicOverlay = "border-x-8 border-t-8 border-white";
-
-    export let styleItemShape = "md:rounded-2xl";
+    export let styleGraphicShape = { l: "rounded-l-2xl", r: "rounded-r-2xl", v: "rounded-t-2xl" };
 
     $: innerWidth = 0;
 </script>
@@ -32,7 +33,7 @@
         </div>
     </div> -->
 
-    <div class="flex flex-col {styleCover} {styleCoverShape}">
+    <div class="flex flex-col {styleCover} {styleCoverShape} {styleCoverSpacing}">
         {#if overlayContent}
             <div class="size-full {styleGraphicOverlay}">
                 <slot name="graphic" />
@@ -41,10 +42,10 @@
                 <slot name="content" />
             </div>
         {:else}
-            <div class="size-full {styleGraphic} {styleItemShape}">
+            <div class="size-full {styleGraphic} {styleGraphicShape.v}">
                 <slot name="graphic" />
             </div>
-            <div class="w-full {styleContentLayout} {styleContentColor} {styleItemShape}">
+            <div class="w-full {styleContentLayout} {styleContentColor} {styleContentShape.v}">
                 <slot name="content" />
             </div>
         {/if}
@@ -72,19 +73,19 @@
         {/if}
     </div> -->
 
-    <div class="grid grid-cols-2 grid-rows-1 {styleCover} {styleCoverShape}">
+    <div class="grid grid-cols-2 grid-rows-1 {styleCover} {styleCoverShape} {styleCoverSpacing}">
         {#if flipped}
-            <div class="size-full {styleGraphic} {styleItemShape}">
+            <div class="size-full {styleGraphic} {styleGraphicShape.l}">
                 <slot name="graphic" />
             </div>
-            <div class="size-full {styleContentLayout} {styleContentColor} {styleItemShape}">
+            <div class="size-full {styleContentLayout} {styleContentColor} {styleContentShape.r}">
                 <slot name="content" />
             </div>
         {:else}
-            <div class="size-full {styleContentLayout} {styleContentColor} {styleItemShape}">
+            <div class="size-full {styleContentLayout} {styleContentColor} {styleContentShape.l}">
                 <slot name="content" />
             </div>
-            <div class="size-full {styleGraphic} {styleItemShape}">
+            <div class="size-full {styleGraphic} {styleGraphicShape.r}">
                 <slot name="graphic" />
             </div>
         {/if}
