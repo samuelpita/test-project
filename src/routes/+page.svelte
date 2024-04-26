@@ -79,7 +79,7 @@
     <Cover
         flipped={true}
         styleContentColor="bg-gradient-to-tr from-teal-800 to-emerald-700"
-        styleCover="max-w-[80rem] mx-auto h-[50svh]"
+        styleCover="max-w-[80rem] h-[50svh] mx-auto px-6 lg:px-8"
     >
         <svelte:fragment slot="content">
             <h2 class="font-sans text-center lg:mb-2">
@@ -106,7 +106,7 @@
 >
     <Cover
         styleContentColor="bg-gradient-to-bl from-purple-800 to-sky-700"
-        styleCover="max-w-[80rem] mx-auto h-[50svh]"
+        styleCover="max-w-[80rem] h-[50svh] mx-auto px-6 lg:px-8"
     >
         <svelte:fragment slot="content">
             <h2 class="font-sans text-center lg:mb-2">
@@ -116,8 +116,16 @@
         </svelte:fragment>
 
         <div slot="graphic" class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-2">
-            <img src="./code/python-logo.png" alt="" class="size-full object-contain" />
-            <img src="./code/js-logo.png" alt="" class="size-full object-contain" />
+            <ImageTooltip
+                image="./code/python-logo.png"
+                imageAlt="Python"
+                styleImage="object-contain"
+            />
+            <ImageTooltip
+                image="./code/js-logo.png"
+                imageAlt="JavaScript"
+                styleImage="object-contain"
+            />
         </div>
     </Cover>
 </Visibility>
@@ -133,7 +141,7 @@
     <Cover
         flipped={true}
         styleContentColor="bg-gradient-to-l from-fuchsia-800 to-rose-700"
-        styleCover="max-w-[80rem] mx-auto h-[75svh]"
+        styleCover="max-w-[80rem] h-[75svh] mx-auto px-6 lg:px-8"
     >
         <svelte:fragment slot="content">
             <h2 class="font-sans text-center lg:mb-2">
