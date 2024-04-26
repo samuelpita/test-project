@@ -9,7 +9,7 @@
 
     export let style = "";
     export let styleSize = "max-w-[56rem] w-full";
-    export let styleSpacing = "p-6 xl:p-8";
+    export let styleSpacing = "px-6 lg:px-8 pb-6 lg:pb-8";
 </script>
 
 {#if flipped}

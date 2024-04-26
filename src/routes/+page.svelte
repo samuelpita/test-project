@@ -19,7 +19,11 @@
 <Loading />
 
 <!-- Intro -->
-<Cover overlayContent={true} styleCoverShape="" styleItemShape="">
+<Cover
+    overlayContent={true}
+    styleContentShape={{ l: "", r: "", v: "" }}
+    styleGraphicShape={{ l: "", r: "", v: "" }}
+>
     <svelte:fragment slot="content">
         <IconVideo
             poster="./home-title-anim.png"
@@ -67,7 +71,7 @@
 <!-- Capstone Project -->
 <Visibility
     once={true}
-    style="transition duration-300 md:mb-4"
+    style="transition duration-300"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}
@@ -95,7 +99,7 @@
 <!-- Programming -->
 <Visibility
     once={true}
-    style="transition duration-300 md:mb-4"
+    style="transition duration-300"
     styleObserving="opacity-100 translate-y-0"
     styleNotObserving="opacity-0 translate-y-8"
     threshold={0.25}

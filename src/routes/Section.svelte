@@ -8,16 +8,16 @@
     export let id = "";
 
     export let headerFlipped = false;
-    export let headerSize = "max-w-[56rem] w-full";
-    export let headerSpacing = "pb-6 xl:pb-8";
-    export let headerStyle = "border-b-2 border-white mb-6 xl:mb-8";
-
     export let maxWidth = "max-w-[56rem]";
+
+    export let styleHeader = "border-b-2 border-white mb-6 lg:mb-8";
+    export let styleHeaderSize = "max-w-[56rem] w-full";
+    export let styleHeaderSpacing = "pb-6 lg:pb-8";
 
     export let styleColor = "";
     export let styleLayout = "flex-col";
     export let styleShape = "";
-    export let styleSpacing = "p-6 xl:p-8";
+    export let styleSpacing = "px-6 lg:px-8 pb-6 lg:pb-8";
 </script>
 
 <div
@@ -29,9 +29,9 @@
         {icon}
         {iconAlt}
         {iconSize}
-        style={headerStyle}
-        styleSize={headerSize}
-        styleSpacing={headerSpacing}
+        style={styleHeader}
+        styleSize={styleHeaderSize}
+        styleSpacing={styleHeaderSpacing}
     >
         <slot name="header" />
     </Header>

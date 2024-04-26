@@ -12,7 +12,7 @@
 
     export let styleCover = "w-full h-svh";
     export let styleCoverShape = "";
-    export let styleCoverSpacing = "";
+    export let styleCoverSpacing = "mb-6 lg:mb-8";
 
     export let styleGraphic = "border-8 border-white";
     export let styleGraphicOverlay = "border-x-8 border-t-8 border-white";

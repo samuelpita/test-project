@@ -7,12 +7,12 @@
     export let image = "./favicon.png";
     export let imageAlt = "Lorem ipsum dolor sit amet";
 
-    export let styleCard = "";
-    export let styleCardSpacing = "mb-6 xl:mb-8";
+    export let style = "";
+    export let styleSpacing = "mb-6 lg:mb-8";
 
     export let styleContentColor = "bg-neutral-900";
     export let styleContentLayout = "flex flex-col justify-center";
-    export let styleContentSpacing = "p-6 xl:p-8";
+    export let styleContentSpacing = "p-6 lg:p-8";
 
     export let styleImage = "object-cover";
     export let styleImageRatio = "aspect-square";
@@ -43,8 +43,8 @@
 
 <Card
     {flipped}
-    {styleCard}
-    {styleCardSpacing}
+    {style}
+    {styleSpacing}
     {styleContentColor}
     {styleContentLayout}
     {styleContentSpacing}
