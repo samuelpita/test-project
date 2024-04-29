@@ -14,7 +14,7 @@
     export let styleCoverShape = "";
     export let styleCoverSpacing = "mb-6 lg:mb-8";
 
-    export let styleGraphic = "border-8 border-white";
+    export let styleGraphic = "border-8 border-white overflow-hidden";
     export let styleGraphicOverlay = "border-x-8 border-t-8 border-white";
     export let styleGraphicShape = { l: "rounded-l-2xl", r: "rounded-r-2xl", v: "rounded-t-2xl" };
 
