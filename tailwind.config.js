@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: ["./src/**/*.{html,js,svelte,ts}"],
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    DEFAULT: "#673AE4",
+                    50: "#ECDBFA",
+                    100: "#E1C9F8",
+                    200: "#C8A5F3",
+                    300: "#AB81EE",
+                    400: "#8B5DE9",
+                    500: "#673AE4",
+                    600: "#401CCA",
+                    700: "#281599",
+                    800: "#160E67",
+                    900: "#090736",
+                    950: "#04041D",
+                },
+                secondary: {
+                    DEFAULT: "#E43AAB",
+                    50: "#FADBE1",
+                    100: "#F8C9D4",
+                    200: "#F3A5C0",
+                    300: "#EE81B3",
+                    400: "#E95DAC",
+                    500: "#E43AAB",
+                    600: "#CA1CA2",
+                    700: "#991589",
+                    800: "#670E66",
+                    900: "#320736",
+                    950: "#19041D",
+                },
+                tertiary: {
+                    DEFAULT: "#3AC8E4",
+                    50: "#DBFAF4",
+                    100: "#C9F8F1",
+                    200: "#A5F3ED",
+                    300: "#81EDEE",
+                    400: "#5DDDE9",
+                    500: "#3AC8E4",
+                    600: "#1C9FCA",
+                    700: "#156E99",
+                    800: "#0E4367",
+                    900: "#071F36",
+                    950: "#04101D",
+                },
+            },
+        },
+        fontFamily: {
+            display: '"Major Mono Display"',
+            mono: '"JetBrains Mono", ui-monospace',
+            sans: '"Space Grotesk", ui-sans-serif',
+        },
+    },
+    plugins: [],
+};

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90.19 83.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="30.95" y1="7.36" x2="59.24" y2="35.64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcc3d4"/>
+      <stop offset=".5" stop-color="#6fd3f2"/>
+      <stop offset="1" stop-color="#2b6ed4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="31.5" y1="79.32" x2="11.5" y2="44.68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8d4f"/>
+      <stop offset=".5" stop-color="#ffd74e"/>
+      <stop offset="1" stop-color="#fff0a2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="51.37" y1="72" x2="86.01" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00b26e"/>
+      <stop offset=".5" stop-color="#87e4c8"/>
+      <stop offset="1" stop-color="#ecfaff"/>
+    </linearGradient>
+  </defs>
+  <g id="collaboration">
+    <g id="icon">
+      <circle class="cls-1" cx="45.1" cy="47.51" r="25.99"/>
+      <g>
+        <circle class="cls-4" cx="45.1" cy="21.5" r="20"/>
+        <circle class="cls-2" cx="21.5" cy="62" r="20"/>
+        <circle class="cls-3" cx="68.69" cy="62" r="20"/>
+      </g>
+    </g>
+  </g>
+</svg>
