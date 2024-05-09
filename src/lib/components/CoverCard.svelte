@@ -14,7 +14,7 @@
     export let graphic = "bg-white border-white border-8";
     export let graphicLayout = "";
 
-    export let margin = "mb-6 lg:mb-8";
+    export let margin = "mb-8 lg:mb-10 2xl:mb-12";
 
     export let verticalAt = "sm";
 
