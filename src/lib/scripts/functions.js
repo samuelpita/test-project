@@ -12,7 +12,7 @@ export function lerp(a, b, alpha) {
 /**
  * @param {string} type
  */
-export function valueInnerWidthType(type) {
+export function screenTypeValue(type) {
     switch (type) {
         case "2xl":
             return 1536;

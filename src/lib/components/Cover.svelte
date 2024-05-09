@@ -1,5 +1,5 @@
 <script>
-    import { valueInnerWidthType } from "$lib/scripts/functions";
+    import { screenTypeValue } from "$lib/scripts/functions";
 
     export let flipped = false;
     export let forceOverlay = false;
@@ -23,7 +23,7 @@
 <svelte:window bind:innerWidth />
 
 <header class="h-svh w-full {margin}">
-    {#if innerWidth <= valueInnerWidthType(overlayAt) || forceOverlay}
+    {#if innerWidth <= screenTypeValue(overlayAt) || forceOverlay}
         <!-- Overlay Mode -->
         <div class="size-full {graphicOverlay} {graphicLayout}">
             <slot name="graphic">

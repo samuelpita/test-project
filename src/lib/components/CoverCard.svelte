@@ -1,5 +1,5 @@
 <script>
-    import { valueInnerWidthType } from "$lib/scripts/functions";
+    import { screenTypeValue } from "$lib/scripts/functions";
 
     export let flipped = false;
     export let forceVertical = false;
@@ -24,7 +24,7 @@
 <svelte:window bind:innerWidth />
 
 <section class="{cardHeight} w-full {margin}">
-    {#if innerWidth <= valueInnerWidthType(verticalAt) || forceVertical}
+    {#if innerWidth <= screenTypeValue(verticalAt) || forceVertical}
         <!-- Vertical Mode -->
         <div class="size-full flex flex-col">
             <div class="size-full overflow-hidden rounded-t-2xl {graphic} {graphicLayout}">
