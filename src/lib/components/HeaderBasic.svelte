@@ -5,7 +5,7 @@
 
     export let icon = "./favicon.svg";
     export let iconAlt = "About Me";
-    export let iconSize = "size-24 lg:size-28 2xl:size-32";
+    export let iconSize = "w-24 lg:w-28 2xl:w-32";
 
     export let id = "About Me";
 
