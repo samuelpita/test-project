@@ -1,4 +1,5 @@
 <script>
+    import { glob } from "./Global.svelte";
     import { screenTypeValue } from "$lib/scripts/functions";
 
     export let flipped = false;
@@ -13,7 +14,7 @@
     export let graphicOverlay = "bg-white border-white border-t-8 border-x-8";
     export let graphicLayout = "";
 
-    export let margin = "mb-8 lg:mb-10 2xl:mb-12";
+    export let margin = glob.margin.main.b;
 
     export let overlayAt = "sm";
 
@@ -25,15 +26,18 @@
 <header class="h-svh w-full {margin}">
     {#if innerWidth <= screenTypeValue(overlayAt) || forceOverlay}
         <!-- Overlay Mode -->
+
         <div class="size-full {graphicOverlay} {graphicLayout}">
             <slot name="graphic">
                 <img src="./home-other-0.jpeg" alt="" class="size-full object-cover" />
             </slot>
         </div>
-        <div class="absolute bottom-0 w-full px-8 py-16 {contentColorOverlay} {contentLayout}">
+
+        <!-- prettier-ignore -->
+        <div class="absolute bottom-0 w-full {glob.padding.cover.v} {contentColorOverlay} {contentLayout}">
             <slot name="content">
-                <h1 class="font-sans">Hello World!</h1>
-                <h4 class="font-sans">Lorem ipsum dolor sit</h4>
+                <h1>Hello World!</h1>
+                <h4>Lorem ipsum dolor sit</h4>
             </slot>
         </div>
     {:else}
@@ -42,25 +46,31 @@
         <div class="size-full flex">
             {#if flipped}
                 <!-- Graphic | Content -->
+
                 <div class="size-full {graphic} {graphicLayout}">
                     <slot name="graphic">
                         <img src="./home-other-0.jpeg" alt="" class="size-full object-cover" />
                     </slot>
                 </div>
-                <div class="size-full px-8 {contentColor} {contentLayout} {contentMaxWidth}">
+
+                <!-- prettier-ignore -->
+                <div class="size-full {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}">
                     <slot name="content">
-                        <h1 class="font-sans">Hello World!</h1>
-                        <h4 class="font-sans">Lorem ipsum dolor sit</h4>
+                        <h1>Hello World!</h1>
+                        <h4>Lorem ipsum dolor sit</h4>
                     </slot>
                 </div>
             {:else}
                 <!-- Content | Graphic -->
-                <div class="size-full px-8 {contentColor} {contentLayout} {contentMaxWidth}">
+
+                <!-- prettier-ignore -->
+                <div class="size-full {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}">
                     <slot name="content">
-                        <h1 class="font-sans">Hello World!</h1>
-                        <h4 class="font-sans">Lorem ipsum dolor sit</h4>
+                        <h1>Hello World!</h1>
+                        <h4>Lorem ipsum dolor sit</h4>
                     </slot>
                 </div>
+
                 <div class="size-full {graphic} {graphicLayout}">
                     <slot name="graphic">
                         <img src="./home-other-0.jpeg" alt="" class="size-full object-cover" />
