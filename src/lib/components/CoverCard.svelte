@@ -29,7 +29,7 @@
         <!-- Vertical Mode -->
 
         <div class="size-full flex flex-col">
-            <div class="size-full overflow-hidden rounded-t-2xl {graphic} {graphicLayout}">
+            <div class="size-full overflow-hidden rounded-t-lg {graphic} {graphicLayout}">
                 <slot name="graphic">
                     <img src="./home-other-0.jpeg" alt="" class="size-full object-cover" />
                 </slot>
@@ -37,7 +37,7 @@
 
             <!-- prettier-ignore -->
             <div
-                class="size-full overflow-hidden rounded-b-2xl {glob.padding.cover.v} {contentColor} {contentLayout} {contentMaxHeight}"
+                class="size-full overflow-hidden rounded-b-lg {glob.padding.cover.v} {contentColor} {contentLayout} {contentMaxHeight}"
             >
                 <slot name="content">
                     <h1>Hello World!</h1>
@@ -52,7 +52,7 @@
             {#if flipped}
                 <!-- Graphic | Content -->
 
-                <div class="w-full overflow-hidden rounded-l-2xl {graphic} {graphicLayout}">
+                <div class="w-full overflow-hidden rounded-l-lg {graphic} {graphicLayout}">
                     <slot name="graphic">
                         <img src="./home-other-0.jpeg" alt="" class="size-full object-cover" />
                     </slot>
@@ -60,7 +60,7 @@
 
                 <!-- prettier-ignore -->
                 <div
-                    class="w-full overflow-hidden rounded-r-2xl {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}"
+                    class="w-full overflow-hidden rounded-r-lg {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}"
                 >
                     <slot name="content">
                         <h1>Hello World!</h1>
@@ -72,7 +72,7 @@
 
                 <!-- prettier-ignore -->
                 <div
-                    class="w-full overflow-hidden rounded-l-2xl {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}"
+                    class="w-full overflow-hidden rounded-l-lg {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}"
                 >
                     <slot name="content">
                         <h1>Hello World!</h1>
@@ -80,7 +80,7 @@
                     </slot>
                 </div>
 
-                <div class="w-full overflow-hidden rounded-r-2xl {graphic} {graphicLayout}">
+                <div class="w-full overflow-hidden rounded-r-lg {graphic} {graphicLayout}">
                     <slot name="graphic">
                         <img src="./home-other-0.jpeg" alt="" class="size-full object-cover" />
                     </slot>

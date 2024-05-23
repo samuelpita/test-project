@@ -2,7 +2,7 @@
     let show = false;
 
     const styleAltText = "px-3 py-2";
-    const styleAlt = "bg-black/70 max-w-md mx-2 mb-2 rounded-xl";
+    const styleAlt = "bg-black/70 max-w-md mx-2 mb-2 rounded";
     const styleAltShow = {
         true: "opacity-100 translate-y-0",
         false: "opacity-0 -translate-y-4",
