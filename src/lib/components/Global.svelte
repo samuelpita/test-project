@@ -7,6 +7,11 @@
             x: "border-x-4 md:border-x-6 lg:border-x-8",
         },
 
+        // Gap
+        gap: {
+            main: "gap-1 md:gap-1.5 lg:gap-2",
+        },
+
         // Margin & Padding
         margin: {
             main: {
