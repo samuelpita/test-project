@@ -9,7 +9,7 @@
 
     export let id = "About Me";
 
-    export let border = "border-white border-b-2";
+    export let border = "border-white border-b";
     export let margin = glob.margin.main.b;
     export let padding = glob.padding.header;
 </script>

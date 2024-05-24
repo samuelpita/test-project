@@ -10,8 +10,9 @@
     export let contentLayout = "flex flex-col justify-center";
     export let contentMaxWidth = "max-w-[50%]";
 
-    export let graphic = "bg-white border-white border-8";
-    export let graphicOverlay = "bg-white border-white border-t-8 border-x-8";
+    export let graphic = "bg-white border-white " + glob.borderWidth.all;
+    export let graphicOverlay =
+        "bg-white border-white " + glob.borderWidth.t + " " + glob.borderWidth.x;
     export let graphicLayout = "";
 
     export let margin = glob.margin.main.b;

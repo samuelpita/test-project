@@ -12,7 +12,7 @@
     export let contentMaxHeight = "max-h-[50%]";
     export let contentMaxWidth = "max-w-[50%]";
 
-    export let graphic = "bg-white border-white border-8";
+    export let graphic = "bg-white border-white " + glob.borderWidth.all;
     export let graphicLayout = "";
 
     export let margin = glob.margin.main.b;

@@ -13,6 +13,10 @@ export default {
             full: "9999px",
         },
         extend: {
+            borderWidth: {
+                DEFAULT: "2px",
+                6: "6px",
+            },
             colors: {
                 primary: {
                     DEFAULT: "#673AE4",

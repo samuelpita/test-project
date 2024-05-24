@@ -1,5 +1,12 @@
 <script context="module">
     export const glob = {
+        // Border Width
+        borderWidth: {
+            all: "border-4 md:border-6 lg:border-8",
+            t: "border-t-4 md:border-t-6 lg:border-t-8",
+            x: "border-x-4 md:border-x-6 lg:border-x-8",
+        },
+
         // Margin & Padding
         margin: {
             main: {
