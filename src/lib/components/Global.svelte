@@ -21,6 +21,7 @@
             },
         },
         padding: {
+            card: "p-6 md:p-8 lg:p-10",
             cover: {
                 h: "px-8 py-10 lg:px-10 lg:py-12",
                 v: "px-8 py-12",
