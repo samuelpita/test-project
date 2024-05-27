@@ -3,7 +3,7 @@
 
     export let flipped = false;
 
-    export let icon = "./favicon.svg";
+    export let icon = "./favicon.png";
     export let iconAlt = "About Me";
     export let iconSize = "w-24 lg:w-28 2xl:w-32";
 

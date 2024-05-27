@@ -21,7 +21,7 @@
         _styleAlt = styleAlt + " " + styleAltShow.true;
     };
 
-    export let image = "./favicon.svg";
+    export let image = "./home-other-0.jpeg";
     export let imageAlt = "Lorem ipsum dolor sit";
 
     export let style = "size-full";
