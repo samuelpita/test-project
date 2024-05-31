@@ -35,3 +35,57 @@
         @apply font-sans lg:text-lg xl:text-xl;
     }
 }
+
+@layer components {
+    .border-main {
+        @apply border-4 md:border-6 lg:border-8;
+    }
+    .border-main-b {
+        @apply border-b-4 md:border-b-6 lg:border-b-8;
+    }
+    .border-main-t {
+        @apply border-t-4 md:border-t-6 lg:border-t-8;
+    }
+    .border-main-x {
+        @apply border-x-4 md:border-x-6 lg:border-x-8;
+    }
+    .gap-main {
+        @apply gap-1 md:gap-1.5 lg:gap-2;
+    }
+    .m-main-b {
+        @apply mb-8 lg:mb-10 2xl:mb-12;
+    }
+    .m-main-t {
+        @apply mt-8 lg:mt-10 2xl:mt-12;
+    }
+    .m-main-y {
+        @apply my-8 lg:my-10 2xl:my-12;
+    }
+    .p-card {
+        @apply p-6 md:p-8 lg:p-10;
+    }
+    .p-cover-h {
+        @apply px-8 py-10 lg:px-10 lg:py-12;
+    }
+    .p-cover-v {
+        @apply px-8 py-12;
+    }
+    .p-main-b {
+        @apply pb-8 lg:pb-10 2xl:pb-12;
+    }
+    .p-main-t {
+        @apply pt-8 lg:pt-10 2xl:pt-12;
+    }
+    .p-main-x {
+        @apply px-6 md:px-8 lg:px-10;
+    }
+    .p-main-y {
+        @apply py-8 lg:py-10 2xl:py-12;
+    }
+    .p-main-sm-y {
+        @apply py-4 lg:py-6 2xl:py-8;
+    }
+    .max-w-main {
+        @apply max-w-4xl;
+    }
+}
