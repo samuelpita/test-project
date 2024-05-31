@@ -1,6 +1,4 @@
 <script>
-    import { glob } from "./Global.svelte";
-
     export let flipped = false;
 
     export let icon = "./favicon.png";
@@ -10,8 +8,8 @@
     export let id = "About Me";
 
     export let border = "border-white border-b";
-    export let margin = glob.margin.main.b;
-    export let padding = glob.padding.header;
+    export let margin = "m-main-b";
+    export let padding = "p-main-sm-y";
 </script>
 
 <header class="w-full {border} {margin} {padding}" {id}>

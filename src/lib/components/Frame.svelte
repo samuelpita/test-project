@@ -1,12 +1,10 @@
 <script>
-    import { glob } from "./Global.svelte";
-
     export let layout = "";
-    export let margin = glob.margin.main.b;
+    export let margin = "m-main-b";
     export let maxHeight = "";
-    export let maxWidth = glob.width.main;
+    export let maxWidth = "max-w-main";
     export let innerPadding = "";
-    export let outerPadding = glob.padding.main.x;
+    export let outerPadding = "p-main-x";
     export let sizing = "w-full";
 </script>
 

@@ -1,6 +1,5 @@
 <script>
     import "../app.css";
-    import { glob } from "$lib/components/Global.svelte";
     import Loading from "$lib/components/Loading.svelte";
 </script>
 
@@ -8,10 +7,8 @@
 
 <slot />
 
-<footer class="w-full {glob.padding.main.x} flex justify-center">
-    <div
-        class="w-full {glob.width.main} {glob.padding.main.y} flex flex-col items-center border-t-2"
-    >
+<footer class="w-full p-main-x flex justify-center">
+    <div class="w-full max-w-main p-main-y flex flex-col items-center border-t-2">
         <h4 class="font-sans">made with love by</h4>
         <h2 class="font-display mb-8">Samuel Pita</h2>
         <p class="font-sans text-neutral-500">

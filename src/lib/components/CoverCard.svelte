@@ -1,5 +1,4 @@
 <script>
-    import { glob } from "./Global.svelte";
     import { screenTypeValue } from "$lib/scripts/functions";
 
     export let flipped = false;
@@ -12,10 +11,10 @@
     export let contentMaxHeight = "max-h-[50%]";
     export let contentMaxWidth = "max-w-[50%]";
 
-    export let graphic = "bg-white border-white " + glob.borderWidth.all;
+    export let graphic = "bg-white border-white border-main";
     export let graphicLayout = "";
 
-    export let margin = glob.margin.main.b;
+    export let margin = "m-main-b";
 
     export let verticalAt = "sm";
 
@@ -37,7 +36,7 @@
 
             <!-- prettier-ignore -->
             <div
-                class="size-full overflow-hidden rounded-b-lg {glob.padding.cover.v} {contentColor} {contentLayout} {contentMaxHeight}"
+                class="size-full overflow-hidden rounded-b-lg p-cover-v {contentColor} {contentLayout} {contentMaxHeight}"
             >
                 <slot name="content">
                     <h1>Hello World!</h1>
@@ -60,7 +59,7 @@
 
                 <!-- prettier-ignore -->
                 <div
-                    class="w-full overflow-hidden rounded-r-lg {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}"
+                    class="w-full overflow-hidden rounded-r-lg p-cover-h {contentColor} {contentLayout} {contentMaxWidth}"
                 >
                     <slot name="content">
                         <h1>Hello World!</h1>
@@ -72,7 +71,7 @@
 
                 <!-- prettier-ignore -->
                 <div
-                    class="w-full overflow-hidden rounded-l-lg {glob.padding.cover.h} {contentColor} {contentLayout} {contentMaxWidth}"
+                    class="w-full overflow-hidden rounded-l-lg p-cover-h {contentColor} {contentLayout} {contentMaxWidth}"
                 >
                     <slot name="content">
                         <h1>Hello World!</h1>
