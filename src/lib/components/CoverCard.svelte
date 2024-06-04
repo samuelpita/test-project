@@ -14,7 +14,7 @@
     export let graphic = "bg-white border-white border-main";
     export let graphicLayout = "";
 
-    export let margin = "m-main-b";
+    export let margin = "mb-main";
 
     export let verticalAt = "sm";
 
@@ -36,7 +36,7 @@
 
             <!-- prettier-ignore -->
             <div
-                class="size-full overflow-hidden rounded-b-lg p-cover-v {contentColor} {contentLayout} {contentMaxHeight}"
+                class="size-full overflow-hidden rounded-b-lg pv-cover {contentColor} {contentLayout} {contentMaxHeight}"
             >
                 <slot name="content">
                     <h1>Hello World!</h1>
@@ -59,7 +59,7 @@
 
                 <!-- prettier-ignore -->
                 <div
-                    class="w-full overflow-hidden rounded-r-lg p-cover-h {contentColor} {contentLayout} {contentMaxWidth}"
+                    class="w-full overflow-hidden rounded-r-lg ph-cover {contentColor} {contentLayout} {contentMaxWidth}"
                 >
                     <slot name="content">
                         <h1>Hello World!</h1>
@@ -71,7 +71,7 @@
 
                 <!-- prettier-ignore -->
                 <div
-                    class="w-full overflow-hidden rounded-l-lg p-cover-h {contentColor} {contentLayout} {contentMaxWidth}"
+                    class="w-full overflow-hidden rounded-l-lg ph-cover {contentColor} {contentLayout} {contentMaxWidth}"
                 >
                     <slot name="content">
                         <h1>Hello World!</h1>

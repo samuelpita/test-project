@@ -15,7 +15,7 @@
         <h3 class="text-center">Programmer & Graphics Designer</h3>
     </VisibilityBasic>
 
-    <div class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-main" slot="graphic">
+    <div class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-border" slot="graphic">
         <img src="./home-title-0.jpeg" alt="" class="size-full object-cover" />
         <img src="./home-title-1.jpeg" alt="" class="size-full object-cover" />
         <img src="./home-title-2.jpeg" alt="" class="size-full object-cover" />
@@ -24,7 +24,7 @@
 </Cover>
 
 <main class="w-full flex flex-col items-center">
-    <article class="m-main-y">
+    <article class="my-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic icon="./about-me.svg" iconSize="w-16 lg:w-20 2xl:w-24">
@@ -43,7 +43,7 @@
         </Frame>
     </article>
 
-    <article class="m-main-y">
+    <article class="my-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic flipped={true}>
@@ -85,7 +85,7 @@
                     </svelte:fragment>
 
                     <div
-                        class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-main"
+                        class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-border"
                         slot="graphic"
                     >
                         <ImageTooltip image="./code/js-logo.png" imageAlt="JavaScript logo" />
@@ -105,7 +105,7 @@
                     </svelte:fragment>
 
                     <div
-                        class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-main"
+                        class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-border"
                         slot="graphic"
                     >
                         <ImageTooltip

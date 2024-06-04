@@ -24,16 +24,16 @@
     <!-- 
         James, Jos, & Nat-nat
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame>
-            <section class="w-full m-main-b">
+            <section class="w-full mb-main">
                 <VisibilityBasic>
                     <img
                         src="./portfolio/icon-quote.png"
                         alt="Quote icon"
-                        class="w-16 lg:w-20 2xl:w-24 m-main-b"
+                        class="w-16 lg:w-20 2xl:w-24 mb-main"
                     />
-                    <h3 class="m-main-b">
+                    <h3 class="mb-main">
                         <i>
                             Learn from new experiences, and learn how to use that as your strength.
                             Be the main actor for your life.
@@ -44,7 +44,7 @@
             </section>
 
             <VisibilityBasic>
-                <div class="w-full m-main-b border-white border-b-2"></div>
+                <div class="w-full mb-main border-white border-b-2"></div>
             </VisibilityBasic>
 
             <section class="w-full">
@@ -88,7 +88,7 @@
     <!-- 
         My Family
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic icon="./portfolio/icon-family.png">
@@ -189,7 +189,7 @@
     <!-- 
         My Friends & Community
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic flipped={true} icon="./portfolio/icon-community.svg">
@@ -202,7 +202,7 @@
     <!-- 
         My Hobbies & Passions
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic icon="./portfolio/icon-passions.png">
@@ -215,7 +215,7 @@
     <!-- 
         Where I've been
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic flipped={true} icon="./portfolio/icon-past.png">
@@ -228,7 +228,7 @@
     <!-- 
         Web Development, & sammuu.dev
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic icon="./portfolio/icon-webdev.png">
@@ -242,7 +242,7 @@
                     <img
                         src="./code/github.svg"
                         alt="GitHub icon"
-                        class="w-16 lg:w-20 2xl:w-24 m-main-b"
+                        class="w-16 lg:w-20 2xl:w-24 mb-main"
                     />
                     <h2 class="mb-4">
                         <a href="https://github.com/samuelpita/test-project">
@@ -258,7 +258,7 @@
     <!-- 
         Church Pianist, & the Worship Team
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic flipped={true} icon="./portfolio/icon-piano.png">
@@ -272,7 +272,7 @@
     <!-- 
         Where I'm going
     -->
-    <article class="w-full flex flex-col items-center m-main-b">
+    <article class="w-full flex flex-col items-center mb-main">
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic icon="./portfolio/icon-future.png">

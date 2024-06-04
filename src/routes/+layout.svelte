@@ -10,7 +10,7 @@
 
 <footer class="w-full flex justify-center">
     <Frame margin="">
-        <div class="w-full p-main-y flex flex-col items-center border-white border-t-2">
+        <div class="w-full py-main flex flex-col items-center border-white border-t-2">
             <h4 class="font-sans">made with love by</h4>
             <h2 class="font-display mb-8">Samuel Pita</h2>
             <p class="font-sans text-neutral-500">
