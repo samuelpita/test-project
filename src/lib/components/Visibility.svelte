@@ -21,6 +21,9 @@
     export let observing = { true: "opacity-100", false: "opacity-0" };
 
     /** @type {string} */
+    export let style = "w-full";
+
+    /** @type {string} */
     export let transition = "transition-all duration-300";
 
     export let once = false;
@@ -38,7 +41,7 @@
 
     /** @param {CustomEvent<IntersectionObserverEntry>} e */
     const defaultOnObserve = (e) => {
-        self.className = transition;
+        self.className = style + " " + transition;
 
         let data = e.detail.isIntersecting ? observing.true : observing.false;
         if (typeof data == "string") self.className += " " + data;
