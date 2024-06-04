@@ -12,7 +12,7 @@
         <div class="max-w-3xl mb-1 xl:mb-2 mx-auto">
             <img src="home-title-anim.png" alt="" class="size-full object-contain" />
         </div>
-        <h3 class="text-center">Programmer & Graphics Designer</h3>
+        <h4 class="text-center">Programmer & Graphics Designer</h4>
     </VisibilityBasic>
 
     <div class="size-full grid grid-cols-2 auto-rows-fr bg-white gap-border" slot="graphic">
@@ -28,7 +28,7 @@
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic icon="./about-me.svg" iconSize="w-16 lg:w-20 2xl:w-24">
-                    <h2>About Me</h2>
+                    <h3>About Me</h3>
                 </HeaderBasic>
                 <p>
                     My name is Samuel Pita, and I am a Filipino local in Whistler, and have been for
@@ -47,7 +47,7 @@
         <Frame margin="">
             <VisibilityBasic>
                 <HeaderBasic flipped={true}>
-                    <h2 class="text-right">Works & Stuff</h2>
+                    <h3 class="text-right">Works & Stuff</h3>
                 </HeaderBasic>
             </VisibilityBasic>
 
@@ -55,9 +55,9 @@
             <VisibilityBasic>
                 <CoverCard contentColor="bg-gradient-to-t from-cyan-800 to-emerald-600">
                     <svelte:fragment slot="content">
-                        <h2 class="text-center mb-2">
+                        <h3 class="text-center mb-2">
                             <a href="/portfolio">My Capstone Portfolio</a>
-                        </h2>
+                        </h3>
                         <p class="text-center">
                             My life & learning journey, compiled in a webpage.
                         </p>
@@ -78,9 +78,9 @@
                     flipped={true}
                 >
                     <svelte:fragment slot="content">
-                        <h2 class="text-center mb-2">
+                        <h3 class="text-center mb-2">
                             <a href="/code">Programming Projects</a>
-                        </h2>
+                        </h3>
                         <p class="text-center">Includes neatly-written source code.</p>
                     </svelte:fragment>
 
@@ -98,9 +98,9 @@
             <VisibilityBasic>
                 <CoverCard contentColor="bg-gradient-to-t from-orange-700 to-fuchsia-600">
                     <svelte:fragment slot="content">
-                        <h2 class="text-center mb-2">
+                        <h3 class="text-center mb-2">
                             <a href="/art">Arts & Media</a>
-                        </h2>
+                        </h3>
                         <p class="text-center">C#t Design by Samuel Pita.</p>
                     </svelte:fragment>
 
