@@ -10,10 +10,10 @@
     export let contentMaxWidth = "max-w-[50%]";
 
     export let graphic = "bg-white border-white border-main";
-    export let graphicOverlay = "bg-white border-white border-main-t border-main-x";
+    export let graphicOverlay = "bg-white border-white border-t-main border-x-main";
     export let graphicLayout = "";
 
-    export let margin = "m-main-b";
+    export let margin = "mb-main";
 
     export let overlayAt = "sm";
 
@@ -33,7 +33,7 @@
         </div>
 
         <!-- prettier-ignore -->
-        <div class="absolute bottom-0 w-full p-cover-v {contentColorOverlay} {contentLayout}">
+        <div class="absolute bottom-0 w-full pv-cover {contentColorOverlay} {contentLayout}">
             <slot name="content">
                 <h1>Hello World!</h1>
                 <h4>Lorem ipsum dolor sit</h4>
@@ -53,7 +53,7 @@
                 </div>
 
                 <!-- prettier-ignore -->
-                <div class="size-full p-cover-h {contentColor} {contentLayout} {contentMaxWidth}">
+                <div class="size-full ph-cover {contentColor} {contentLayout} {contentMaxWidth}">
                     <slot name="content">
                         <h1>Hello World!</h1>
                         <h4>Lorem ipsum dolor sit</h4>
@@ -63,7 +63,7 @@
                 <!-- Content | Graphic -->
 
                 <!-- prettier-ignore -->
-                <div class="size-full p-cover-h {contentColor} {contentLayout} {contentMaxWidth}">
+                <div class="size-full ph-cover {contentColor} {contentLayout} {contentMaxWidth}">
                     <slot name="content">
                         <h1>Hello World!</h1>
                         <h4>Lorem ipsum dolor sit</h4>

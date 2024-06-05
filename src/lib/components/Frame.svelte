@@ -1,9 +1,9 @@
 <script>
     export let layout = "";
-    export let margin = "m-main-b";
+    export let margin = "mb-main";
     export let maxHeight = "";
     export let maxWidth = "max-w-main";
-    export let padding = "p-main-x";
+    export let padding = "px-main";
     export let sizing = "w-full";
 </script>
 

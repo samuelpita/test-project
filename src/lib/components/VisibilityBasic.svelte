@@ -23,6 +23,7 @@
 
     export let duration = "duration-300";
     export let setting = "fade-translate-y-8";
+    export let style = "w-full";
 
     export let once = false;
     export let threshold = 0.25;
@@ -35,6 +36,7 @@
 
 <Visibility
     observing={transitions[setting]}
+    {style}
     transition="transition-all {duration}"
     {once}
     {threshold}

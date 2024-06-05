@@ -8,8 +8,8 @@
     export let id = "About Me";
 
     export let border = "border-white border-b";
-    export let margin = "m-main-b";
-    export let padding = "p-main-sm-y";
+    export let margin = "mb-main";
+    export let padding = "py-main-sm";
 </script>
 
 <header class="w-full {border} {margin} {padding}" {id}>
