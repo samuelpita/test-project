@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="cube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 831.42 952">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ffe2ea;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 52px;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill: #fff;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="26" y1="251" x2="805.42" y2="251" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec008c"/>
+      <stop offset="1" stop-color="#2e3192"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="220.86" y1="251" x2="220.86" y2="926" gradientUnits="userSpaceOnUse">
+      <stop offset=".2" stop-color="#ffe37c"/>
+      <stop offset=".8" stop-color="#fe3e64"/>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-5" points="805.42 701 805.42 251 415.71 26 26 251 26 701 415.71 926 805.42 701"/>
+  <polygon class="cls-3" points="805.42 251 415.71 476 26 251 415.71 26 805.42 251"/>
+  <polygon class="cls-4" points="26 251 415.71 476 415.71 926 26 701 26 251"/>
+  <polygon class="cls-2" points="805.42 251 415.71 476 415.71 926 805.42 701 805.42 251"/>
+  <g>
+    <path class="cls-1" d="M518.11,651.59c-8.11,4.7-15.03,5.84-20.76,3.43-5.73-2.41-8.6-7.67-8.6-15.78s2.87-16.81,8.6-25.82c5.73-9.01,12.65-15.86,20.76-20.55,8.21-4.75,15.15-5.94,20.83-3.54,5.68,2.39,8.53,7.69,8.53,15.89s-2.84,16.67-8.53,25.7c-5.68,9.03-12.63,15.92-20.83,20.67ZM518.11,755.98c-8.11,4.7-15.03,5.84-20.76,3.43-5.73-2.41-8.6-7.67-8.6-15.78s2.87-16.81,8.6-25.82c5.73-9.01,12.65-15.86,20.76-20.55s15.15-5.94,20.83-3.54c5.68,2.39,8.53,7.69,8.53,15.89s-2.84,16.67-8.53,25.7-12.63,15.92-20.83,20.67Z"/>
+    <path class="cls-1" d="M634.67,715.15v-37.22l6.38-3.69c21.16-12.26,37.42-30.3,48.79-54.14,11.37-23.84,17.05-51.38,17.05-82.61s-5.68-51.28-17.05-61.59c-11.37-10.32-27.63-9.35-48.79,2.91l-6.38,3.69v-37.22l6.38-3.69c34.01-19.7,60.33-23.26,78.96-10.68,18.63,12.58,27.95,40.18,27.95,82.79s-9.32,82.04-27.95,116.51c-18.63,34.47-44.96,61.56-78.96,81.26l-6.38,3.69Z"/>
+  </g>
+</svg>
